@@ -10,4 +10,4 @@
   get_url: url={{onedata_url}}/yum/centos/7x/onedata.repo dest=/etc/yum.repos.d/onedata.repo
 
 - name: "[EL] Install REL oneclient package"
-  yum: name=oneclient enablerepo=onedata
+  yum: name=oneclient enablerepo=onedata update_cache=yes
