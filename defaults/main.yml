@@ -1,3 +1,4 @@
 ---
 # defaults file for oneclient
 onedata_url: "http://packages.onedata.org"
+oneclient_package: "oneclient"

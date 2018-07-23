@@ -22,8 +22,8 @@
 - name: "[Ubuntu] Force an apt cache refresh"
   apt: update_cache=yes
 
-- name: "[Ubuntu] Install Ubuntu oneclient package"
-  apt: pkg=oneclient
+- name: "[Ubuntu] Install Ubuntu {{oneclient_pkg}} package"
+  apt: name={{oneclient_pkg}} state=installed update_cache=yes
 
 - name: "[Ubuntu] Update libtbb2 if needed"
   apt: pkg=libtbb2 state=latest only_upgrade=yes
