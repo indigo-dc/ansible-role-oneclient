@@ -8,6 +8,7 @@ Role Variables
 --------------
 
 - `onedata_url`: base URL of the onedata packages repo (default: http://packages.onedata.org)
+- `oneclient_package` (default: oneclient): allows to specify a different package version, e.g. oneclient-18.02.0.rc9 
 
 Dependencies
 ------------
